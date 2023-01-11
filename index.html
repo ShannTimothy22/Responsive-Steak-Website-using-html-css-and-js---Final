@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter&family=Cookie&family=Ephesis&family=Lateef&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- remix icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS and JS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script defer src="./assets/js/main.js"></script>
+
+    <title>Responsive Steak Website</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav flex-container container">
+        <div class="nav__logo">Steakhouse</div>
+
+        <div class="nav__open" id="nav-open">
+          <i class="ri-apps-2-line"></i>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list flex-container">
+            <li class="nav__items">
+              <a href="#home" class="nav__links">Home</a>
+            </li>
+            <li class="nav__items">
+              <a href="#about-us" class="nav__links">About Us</a>
+            </li>
+            <li class="nav__items">
+              <a href="#special" class="nav__links">Special</a>
+            </li>
+            <li class="nav__items">
+              <a href="#recently" class="nav__links">Recently</a>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <section class="home" id="home">
+        <div class="home__img-container">
+          <img
+            class="home__background"
+            src="./assets/Images/Hero-3.jpg"
+            alt=""
+          />
+          <img
+            class="home__pepper"
+            src="./assets/Images/Pepper.png"
+            alt="pepper"
+          />
+          <img
+            class="home__rosemary__1 hidden-left"
+            src="./assets/Images/Rosemary.png"
+            alt="Rosemary-1"
+          />
+          <img
+            class="home__rosemary__2 hidden-right"
+            src="./assets/Images/Rosemary.png"
+            alt="Rosemary-2"
+          />
+        </div>
+        <div class="home__container grid-container">
+          <img
+            class="home__background__1"
+            src="./assets/Images/Hero-2.jpg"
+            alt="hero-2"
+          />
+
+          <img
+            class="home__background__2"
+            src="./assets/Images/Hero-1.jpg"
+            alt="hero-1"
+          />
+          <div class="home__context hidden-bottom">
+            <h1>An Exceptional and Authentic Steakhouse</h1>
+            <div class="home__logo">Steakhouse</div>
+            <div class="underline"></div>
+            <button class="home__button">
+              <p>Book A Table</p>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us -->
+      <section class="about-us container flex-container" id="about-us">
+        <div class="about-us__img-container">
+          <img
+            class="about-us__spices hidden-left"
+            src="./assets/Images/Spices.png"
+            alt="spices"
+          />
+          <img
+            class="about-us__salt hidden-right"
+            src="./assets/Images/Salt.png"
+            alt="salt"
+          />
+          <img
+            class="about-us__garlic hidden-left"
+            src="./assets/Images/Garlic.png"
+            alt="garlic"
+          />
+          <img
+            class="about-us__knife hidden-right"
+            src="./assets/Images/Knife.png"
+            alt="knife"
+          />
+        </div>
+        <div class="about-us__content flex-container hidden-bottom">
+          <h2><span>Discover</span><br />Our Story</h2>
+          <p>
+            Starting from a small cafe owned by Mr. Bond and Mrs. Jane in 1968
+            serving snacks and ice cream, now Steakhouse Steak & Ice Cream has
+            become a legendary steak restaurant.
+          </p>
+          <button>
+            <p>More About Us</p>
+          </button>
+        </div>
+      </section>
+
+      <!-- Today's Special -->
+      <section class="special container flex-container" id="special">
+        <h2 class="hidden-bottom">
+          <span>Today's Special</span><br />Try One of the three popular steak
+        </h2>
+        <div class="special__menu container grid-container">
+          <div class="special__items flex-container hidden-left">
+            <img src="./assets/Images/Menu-1.png" alt="menu-1" />
+            <h3>London Broil Steak</h3>
+            <p>American Premium Steak</p>
+            <p class="prices">$45.00</p>
+          </div>
+          <div class="special__items flex-container hidden-left">
+            <img src="./assets//Images/Menu-2.png" alt="menu-2" />
+            <h3>Sirloin Steak</h3>
+            <p>American Premium Steak</p>
+            <p class="prices">$45.00</p>
+          </div>
+          <div class="special__items flex-container hidden-left">
+            <img src="./assets/Images/Menu-3.png" alt="menu-3" />
+            <h3>Tri Tip Steak</h3>
+            <p>American Premium Steak</p>
+            <p class="prices">$45.00</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recently -->
+      <section class="recently container grid-container hidden" id="recently">
+        <h2 class="hidden-left"><span>What's New</span></h2>
+        <div class="recently__content flex-container hidden-left">
+          <h3>Tomahawk Steak & french fries</h3>
+          <p>
+            When you first look at a tomahawk steak, you may conjure up images
+            of Fred Flintstone enjoying one by the bone. The thickness of a
+            tomahawk’s meat depends on the thickness of its bone.
+          </p>
+        </div>
+        <img
+          class="hidden-right"
+          src="./assets/Images/New-Menu.png"
+          alt="new-menu"
+        />
+      </section>
+
+      <!-- Reservation -->
+      <section class="reservation" id="reservation">
+        <img src="./assets/Images/Reservation.jpg" alt="reservation" />
+        <div class="reservation__content">
+          <h2>Reservation<br /><span>Book Your Table</span></h2>
+          <button>
+            <p>Online Booking</p>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer container grid-container hidden-bottom">
+      <div class="footer__content">
+        <h2>Location</h2>
+        <div class="footer__p grid-container">
+          <p>Start with our fresh sliced shrimp and 1223 roosevelt, ny</p>
+          <p>Start with our fresh sliced shrimp and 1223 roosevelt, ny</p>
+        </div>
+      </div>
+      <div class="footer__content">
+        <h2>Working Hours</h2>
+        <div class="footer__text flex-container">
+          <div class="footer__p grid-container">
+            <p>Monday - Thursday</p>
+            <p>10 am - 9 pm</p>
+          </div>
+          <div class="footer__p grid-container">
+            <p>Friday</p>
+            <p>4 pm - 11 pm</p>
+          </div>
+          <div class="footer__p grid-container">
+            <p>Saturday - Sunday</p>
+            <p>10 am - 9 pm</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__content footer__logo flex-container">
+        <div class="nav__logo">Steakhouse</div>
+        <p>Info@kitchen.com</p>
+      </div>
+    </footer>
+  </body>
+</html>
